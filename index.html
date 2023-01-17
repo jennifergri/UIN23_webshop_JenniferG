@@ -13,11 +13,22 @@
             <a href="index.html">
                 <img src="images/LD_logo.svg" alt="LEGO-DUDES">
             </a>
-            <figure id="cart">
-                <span class="label">2</span>
+            <figure id="cart" onclick="toggleCart()">
+                <span class="label">0</span>
                 <img src="images/legocart.svg" alt="Handlekurv">
             </figure>
         </header>
+
+        <section id="cartview" class="hidden">
+            <h3>Din handlevogn</h3>
+            <ul>
+                <li>
+                    Du har ingen varer i handlevognen.
+                </li>
+            </ul>
+            <p>Totalt kr. <span id="total">0</span>,-</p>
+        </section>
+
         <nav>
             <a href="city.html">City</a>
             <a class="active" href="ninjago.html">Ninjago</a>
@@ -25,6 +36,7 @@
             <a href="marine-pirates.html">Marine and Pirates</a>
             <a href="movie-characters.html">Movie Characters</a>
         </nav>
+
         <main>
             <h2>Ninjago</h2>
             <article class="product-card">
@@ -32,42 +44,42 @@
                 <a href="ninjago.html">Ninjago</a>
                 <h3>Dragon Zane</h3>
                 <spam class="price">Kr. 89,-</spam>
-                <button class="addtocart">Legg i handlekurv</button>
+                <button onClick="addToCart('Dragon Zane', 89)">Legg i handlekurv</button>
             </article>
             <article class="product-card">
                 <img src="images/PROD_lil_ninja.webp" alt="Produktbilde av Lil Ninja">
                 <a href="ninjago.html">Ninjago</a>
                 <h3>Lil´Ninja</h3>
                 <spam class="price">Kr. 89,-</spam>
-                <button class="addtocart">Legg i handlekurv</button>
+                <button>Legg i handlekurv</button>
             </article>
             <article class="product-card">
                 <img src="images/PROD_master_wu.webp" alt="Produktbilde av Wu">
                 <a href="ninjago.html">Ninjago</a>
                 <h3>Master Wu</h3>
                 <spam class="price">Kr. 89,-</spam>
-                <button class="addtocart">Legg i handlekurv</button>
+                <button>Legg i handlekurv</button>
             </article>
             <article class="product-card">
                 <img src="images/PROD_scuba_kai.webp" alt="Produktbilde av Kai">
                 <a href="ninjago.html">Ninjago</a>
                 <h3>Scuba Kai</h3>
                 <spam class="price">Kr. 89,-</spam>
-                <button class="addtocart">Legg i handlekurv</button>
+                <button>Legg i handlekurv</button>
             </article>
             <article class="product-card">
                 <img src="images/PROD_the_mechanic.webp" alt="Produktbilde av Mechanic">
                 <a href="ninjago.html">Ninjago</a>
                 <h3>The Mechanic</h3>
                 <spam class="price">Kr. 89,-</spam>
-                <button class="addtocart">Legg i handlekurv</button>
+                <button>Legg i handlekurv</button>
             </article>
             <article class="product-card">
                 <img src="images/PROD_vengestone_warrior.webp" alt="Produktbilde av warrior">
                 <a href="ninjago.html">Ninjago</a>
                 <h3>Vengestone Warrior</h3>
                 <spam class="price">Kr. 89,-</spam>
-                <button class="addtocart">Legg i handlekurv</button>
+                <button>Legg i handlekurv</button>
             </article>
         </main>
     </div>

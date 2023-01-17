@@ -16,10 +16,6 @@ body{
     background-image: url('images/mainbackground.png');
     font-family: 'Rubik', sans-serif;
     font-size: var(--rootsize);
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 div.container{
@@ -28,6 +24,7 @@ div.container{
     margin: 0 auto;
     background-color: var(--white);
     overflow: hidden;
+    position: relative;
 }
 
 header{
@@ -64,6 +61,50 @@ header{
             padding-top: 4px;
             box-sizing: border-box;
         }
+
+#cartview{
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--black);
+    color: var(--white);
+    position: absolute;
+    right: 0;
+    top: 70px;
+    border-left: 0.5rem solid var(--green);
+    border-bottom: 0.5rem solid var(--green);
+    padding: 1rem;
+    transition: ease-in-out 0.3s;
+}
+    #cartview ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    #cartview ul li{
+        border-bottom: 1px solid var(--green);
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        display: block;
+        clear: both;
+    }
+    #cartview ul li > *{
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    span.title{
+        width: calc(100% - 9rem);
+    }
+    span.price, span.quantity{
+        width: 3rem;
+    }
+    button.delete{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: var(--red);
+        color: var(--white);
+        border: none;
+    }
+
 
 nav{
     width: 100%;
@@ -140,3 +181,8 @@ main{
             padding: 0.5rem 1rem;
             font-size: 1rem;
         }
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
